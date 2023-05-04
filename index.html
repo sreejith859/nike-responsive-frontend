@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <link rel="icon" type="img/png"
+        href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F67979fc2-9bc6-4ef1-a91a-9f8129c57645_1500x1500.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<link rel="stylesheet" type="text/css" href="nike.css">
+</head>
+
+<body>
+    <header>
+        <div class="fhead mw-100 d-flex">
+            <div class="logomen">
+                <img class="men-logo ms-5"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                    alt="loading">
+            </div>
+            <div class="nav1 mr-3">
+                <a class="link1 ms-3" href="#">Find a store |</a>
+                <a class="link1 ms-3" href="#">Help |</a>
+                <a class="link1 ms-3" href="#">Join us |</a>
+                <a class="link1 ms-3" href="#">Sign Up</a>
+            </div>
+
+        </div>
+        <div class="shead mw-100 ">
+            <div class="logonike">
+                <img class="nike-logo ms-4"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAD7+/vz8/Pw8PC1tbXm5ubf39/q6urb29vIyMhYWFiRkZE8PDz29vb8/Px5eXnS0tKBgYFxcXGjo6O5ublmZmYsLCwXFxfBwcGoqKgfHx+Xl5fQ0NC4uLhRUVE0NDQoKCgODg5CQkKLi4tUVFRfX199fX1ISEhoaGgJ78M1AAAEQklEQVR4nO3a2ZaqMBAF0BsgiEgrCLSKM9q2/v8PXhxbkTGpAK519ruVlGRO/v0DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4aNaw7RpUp40EfmQ55PVQRPd4X6v/M2Ni0tdFAZMfxrbIF9TmPnll6Nn7KRtbQj/VN6xHXBtiWi8YMBZHgj8fHtk3aX2ImTN/whgbzIQjJP+OR1ghUprtfLEzvy8e5JuxCV2VKJnnpnnhGBJhnCQAJ6sUGWv2O72l9xWJjJ4P/ByjY7P9cOkc2d2PLRfMOwdxaSpGoxcNpo/0mCs7yOuXMJ0ZZ4zwlz2JHfnGdRmnNlLNnIr+3DQv3Y8LLM7SxpdQY/lAsvrRYf6SHjtIdr8rfg1GEkvcMHRjluLTLJN7t3AEjUGU7u2/0tmx+UInCr+9BlwThastaZpvH4+xHUX3u7oPWwuqgHUYoTt5zy7pfku6MsJ70Ma74WjpZGaXzH6Uu1TrEZaq0Vei9aLv7OzYlqz7XQ0ekUnDFrJm7vu4cnNcEQ940V9o2sC5vEVudsnej3xZZf4Fb2Lza0an/OyY6NFEofVfeNXLbsMeF3y8ZM0YyOz98kRPJSjN0AvWGVPek12oZL1hPJeh7JTNiPzC5BIHVbual5IPKkrQl/tNWXrxWNkZbf+1H1CHH3nBoSw7xiaBwnl491oWaWyD+9vy9NhupnJPylOlSRzTvdLsfZXskglK7aGClq4Fycpb61dpmmfTveorkihd5EY6pMn90nHlZhIpXwaPpm+lym1Y7H3ORiHDTvxgvrrgvVzhlen1vqSyE1mPL5RVtNCVjhn61T9e0v2chm4o0wPpVd1jV812dpmB8kyixo7VsxfBcZ3u3wvWmUHyHRs8Rljm1GFbsQlZK7dmdsnCt9Ej9fz6lY9yhr0/5v48T+wo2PsV0Au2MqfCbVo/WL9PM6XmvOlbrVVhfX6zm+oomdDrJ5dYNzH7pZQtrH6C/sufrllecJqX/CiH28zs90qrULHt2g1WswQP3HXh8UOReNFs97ubiVa4pjlv675u30h+gxbvsqpuAGS00v3uRurzW6g4GayuV15DKZvWH62oHWja7H532fsKGuNOPP17O78g03L3e1CU4Vfr3e9BSYbfhNfS0hT0w250vwfqsTRedOzFX+q+QtZu1XY+76psLao6dan7/SFbl6q7F5O0IElvHrT4TKwExcL0GLadRSHhPftdsyeDAiRnRBWvQoiNJMaabdCJp8RlhCf9nxZOBsUUvk3KpexViAp1bsRuOjv7ZTO29dLbNXcvRsWqMWXE7ic1zwet4qMJdgg/7vPd8eLXdBeDxq+NSA2dwquyjTtr9Gm0EjrPuare+FGvuyvregz+O0l9uoXdkUMzQkbfDjkPbc/86G4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf5T8hoDI6CAshMwAAAABJRU5ErkJggg=="
+                    alt="">
+
+            </div>
+            <div class="nav2">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    New & Featured
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Men
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">featured</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Women
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Kid
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sale
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SNKRS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" url="" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="search dropdown-item"> <input type="text" class="search-input"
+                                placeholder="Search..." name="">
+                            <a href="#" class="search-icon">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <a class="icon-btn   ms-3 pt-2" href="#">&#9829;</a>
+                        <a class="icon-btn  ms-3 pt-2" href="#">&#9993;</a>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="ads w-100">
+            <h6 class="h-ads text-center pt-2">Hello Nike App</h6>
+            <p class="p-ads text-center">Download the app to access everything Nike. <a class="p1-ads" href="#">Get Your
+                    Great</a> </p>
+        </div>
+        <div class="shoe text-center">
+            <img class="shoe-img  img-fluid"
+                src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_1119,c_limit/29538824-260e-4d53-9e88-4b198a7cb04e/nike-just-do-it.png"
+                alt="404">
+        </div>
+    </section>
+    <section class="s2">
+        <div class="quotes text-center">
+            <div class="h-small text-center">
+                <h5 class="dawgs fw-normal pt-5">'My Dawgs’</h5>
+            </div>
+            <div class="h-big text-center">
+                <h1 class="luka text-color-primary-dark">LUKA 1</h1>
+            </div>
+            <div class="q-para w-100 text-center">
+                <p class="about-para w-100  ">created as an ode to Luka's most cherished companion,'my dawgs' lets you
+                    feel the love with color cues and paw print deatails inspired bythe features of his adorable pups.
+                </p>
+            </div>
+            <div class="btn">
+                <div class="button-black">
+                    <button type="button" class="btn  btn-dark btn-sm">Get it on App </button>
+                    <button type="button" class="btn ms-2 btn-dark btn-sm">Shop Basketball</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page3">
+            <div class="h3">
+                <h1 class="head3 fw-bold pt-5 mt-4 ms-5 ">Welcome to the Pegasus Shop</h1>
+            </div>
+            <div class="img-cards d-flex">
+                <div class="card1 text-center">
+                    <div class="card-img1 ">
+                        <img class="person-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_366,c_limit/1926120e-0327-42e2-82bf-cb2f0deb3cb4/nike-just-do-it.jpg"
+                            alt="">
+
+                    </div>
+
+
+                </div>
+                <div class="card2 text-center">
+                    <div class="card-img2">
+                        <img class="person-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_366,c_limit/6a6914cd-3712-4e7e-85f8-a8fd01288248/nike-just-do-it.jpg"
+                            alt="">
+
+                    </div>
+
+
+                </div>
+                <div class="card3 text-center ">
+                    <div class="card-img3 ">
+                        <img class="person-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/w_366,c_limit/72f95063-c6b8-4309-a152-5b8ce04d11ce/nike-just-do-it.jpg"
+                            alt="">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page4 text-center">
+            <div class="h-small text-center">
+                <h5 class="dawgs fw-normal pt-5">nike pegasus 40</h5>
+            </div>
+            <div class="h-big text-center">
+                <h1 class="luka text-color-primary-dark">IN PEGUSES WE ARE</h1>
+            </div>
+            <div class="q-para w-100 text-center">
+                <p class="about-para w-100  ">Chase down your future miles in this bold new colourway </p>
+            </div>
+            <div class="btn">
+                <div class="button-black">
+                    <button type="button" class="btn  btn-dark btn-sm">Coming soon on 5 may </button>
+                    <button type="button" class="btn ms-2 btn-dark btn-sm">Shop PEGUSES</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page5">
+            <div class="h3">
+                <h1 class="head3 fw-bold pt-5 mt-4 ms-5 ">The Latest</h1>
+            </div>
+            <div class="img-gif text-center">
+                <img class="productads-img img-fluid w-100 p-5"
+                    src="https://images.squarespace-cdn.com/content/v1/55b77097e4b0d22bbc66a59a/1578535028646-YXH9FZ6EX9EBANB1FOUQ/ezgif.com-video-to-gif-10.gif?format=2500w"
+                    alt="">
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="page6">
+
+        </div>
+    </section>
+    <section>
+        <div class="page7">
+            <div class="h3 pl-3">
+                <h1 class="head3 fw-bold pt-3 mt-2 ms-5 pl-3 ">The Essentials</h1>
+            </div>
+            <div class="img-cards ">
+                <div class="card1">
+                    <div class="card-img2">
+                        <img class="product-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/h_540,c_limit/d94bfa7e-9357-406a-a124-1940712dfa0b/nike-just-do-it.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class="card2">
+                    <div class="card-img2">
+                        <img class="product-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/h_540,c_limit/dc62b322-5c3f-4508-b21c-950683ed460f/nike-just-do-it.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class="card3">
+                    <div class="card-img3">
+                        <img class="product-img"
+                            src="https://static.nike.com/a/images/f_auto/dpr_1.6,cs_srgb/h_540,c_limit/58359474-a0de-4329-959c-55d1652d0912/nike-just-do-it.png"
+                            alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="page8">
+            <footer class=" text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Icons</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">Air Force 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Huarache</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Air Max 90</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Air Max 95</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Shoes</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-dark">All Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Custom Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Jordan Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Running Shoes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Clothing</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark">All Clothing</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Modest Wear</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Hoodies & Pullovers</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark"> Shirts & Tops</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Kids</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-dark">Infant & Toddler Shoes </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Kids' Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Kids' Jordan Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-dark">Kids' Basketball Shoes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center pt-5" style="background-color: rgb(35, 35, 35);">
+                    <div class="link4 d-flex justify-content-between">
+                        <div class="f2-link">
+                            <div class="row ">
+                                <div class="fd-link col-lg-3 col-md-6 mb-4 mb-md-0 ms-5">
+                                    <h5 class="text-uppercase text-light fs-6">Icons</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="#!" class=" text-light">Air Force 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-light">Huarache</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-light">Air Max 90</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-light">Air Max 95</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fd-link col-lg-3 col-md-6 mb-4 mb-md-0 ms-5 ">
+                                    <h5 class="text-uppercase mb-0 text-light fs-6">Shoes</h5>
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!" class="text-secondary">All Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary">Custom Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary">Jordan Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary">Running Shoes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fd-link col-lg-3 col-md-6 mb-4 mb-md-0 ms-5 ">
+                                    <h5 class="text-uppercase text-light fs-6">Clothing</h5>
+
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="#!" class="text-secondary">All Clothing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary">Modest Wear</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary">Hoodies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="text-secondary"> Shirts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="social me-4 mt-2 w-25">
+                            <a href="#" class="s-link ms-2"><i class="fa-brands fa-square-twitter fa-xl"
+                                    style="color: #858585;"></i></a>
+                            <a href="#" class="s-link ms-2"><i class="fa-brands fa-facebook fa-lg"
+                                    style="color: #898b90;"></i></a>
+                            <a href="#" class="s-link ms-2"><i class="fa-brands fa-youtube fa-xl"
+                                    style="color: #b0b2b5;"></i></a>
+                            <a href="#" class="s-link ms-2"><i class="fa-brands fa-instagram fa-lg"
+                                    style="color: #8c9097;"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="under pt-4 d-flex justify-content-between">
+                        <div class="location d-flex ms-5">
+                            <a class="location " href="#"><i class="fa-solid fa-location-dot"
+                                    style="color: #ffffff;"></i> location</a>
+                            <p class="copyright text-secondary ms-4 fw-light">© 2023 Nike, Inc. All Rights Reserved</p>
+
+                        </div>
+                        <div class="term">
+                            <a class="f-guids ms-3 text-secondary" href="#">Guides</a>
+                            <a class="f-guids ms-3 text-secondary" href="#">Terms of Sale</a>
+                            <a class="f-guids ms-3 text-secondary" href="#">Terms of Use</a>
+                            <a class="f-guids ms-3 text-secondary" href="#">Nike Privacy Policy</a>
+
+f-guids
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
